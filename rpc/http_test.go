@@ -124,7 +124,6 @@ func TestHTTPRespBodyUnlimited(t *testing.T) {
 	}
 }
 
-// Tests that an HTTP error results in an HTTPError instance
 // being returned with the expected attributes.
 func TestHTTPErrorResponse(t *testing.T) {
 	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
