@@ -23,7 +23,7 @@ import "fmt"
 type HTTPError struct {
 	StatusCode int
 	Status     string
-	Body       []byte
+	// Body       []byte
 }
 
 func (err HTTPError) Error() string {

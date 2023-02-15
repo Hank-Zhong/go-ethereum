@@ -218,7 +218,7 @@ func (hc *httpConn) doRequest(ctx context.Context, msg interface{}) (io.ReadClos
 		return nil, HTTPError{
 			Status:     resp.Status,
 			StatusCode: resp.StatusCode,
-			Body:       body,
+			// Body:       body,
 		}
 	}
 	return resp.Body, nil
