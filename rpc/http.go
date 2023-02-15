@@ -209,6 +209,7 @@ func (hc *httpConn) doRequest(ctx context.Context, msg interface{}) (io.ReadClos
 		var body []byte
 		if _, err := buf.ReadFrom(resp.Body); err == nil {
 			body = buf.Bytes()
+			fmt.Print(body)
 		}
 
 		if err != nil {
