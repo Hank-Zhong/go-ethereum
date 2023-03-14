@@ -56,6 +56,7 @@ func (i *Interface) SetInt8(n int8)                 { i.object = &n }
 func (i *Interface) SetInt16(n int16)               { i.object = &n }
 func (i *Interface) SetInt32(n int32)               { i.object = &n }
 func (i *Interface) SetInt64(n int64)               { i.object = &n }
+func (i *Interface) SetBytes4(n [4]byte)            { i.object = &n }
 func (i *Interface) SetInt8s(bigints *BigInts) {
 	ints := make([]int8, 0, bigints.Size())
 	for _, bi := range bigints.bigints {
